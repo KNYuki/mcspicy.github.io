@@ -36,7 +36,42 @@
   <div id="content"> 
   <h1>WELCOME TO MCSPICY ISLAND</H1>
   
-  <h1>Turnip Price as of - : - <br><br>
+  <h1><u>Daisy Mae</u> price as of 13/5/2020 : 90 <br><br>
+  
+  <!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 10, 2020 11:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date("Jan 10, 2020 6:00:00").getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Island is now closed.";
+  }
+}, 1000);
+</script>
+
   
   » <a href="/">QUEUE IS CLOSED.</a> «</h1>
   
@@ -45,20 +80,23 @@
 Click the link above to automatically join the island queue.<br>
 A DODO code will be provided once it is your turn.<br>
 <b><br><u>NO entry fees or tips necessary! I'm usually AFK so I won't be able to pick them up.</u></b>
+<p>
+- Nook's Cranny will be on the left past the gate.<br>
+- Daisy Mae will be hanging around residential services.<br>
 
-  <br><br><b>Repeat trips</b>: Please re-join the queue to enter the island again. As there are many more waiting to sell, do limit your trips so others can have a chance.
+  <br><br><b>Repeat trips</b>: Please re-join the queue to enter the island again. As there are many more waiting, do limit your trips so others can have a chance.
   
  <p>
 <b>Code of Conduct</b>: 
 <ul>
 <li><b>Do NOT</b> leave using the minus (-) button! This can cause disruptions and cause everyone to disconnect and lose their progress on the island. LEAVE USING THE AIRPORT.</li>
-<br><li>If you see a fellow visitor still selling after you're done, please don't rush to leave. Not only will you face inteference, they might be disrupted as well. Give it a moment, let's make departure as smooth and pain-free as possible.</li>
+<br><li>If you see a fellow visitor still selling/buying after you're done, please don't rush to leave. Not only will you face inteference, they might be disrupted as well. Give it a moment, let's make departure as smooth and pain-free as possible.</li>
 <br><li>If you see tips on the ground from someone else and the host is AFK, please don't steal them. We both know that's hella rude.</li>
 </p>
   <h3>For errors and questions DM me via twitter.</h3>
   <p>
   
-  <br><br>Powered by <a href="https://app.animalcrossingexchange.com/home">Animal Crossing Exchange</a>, <a href="https://www.netlify.com/">netlify</a>, and <a href="https://github.com/">github</a>.
+  <br><br>Powered by Time Travel.
 
   </div>
  
